@@ -1,0 +1,245 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    padding: 20px 0; 
+}
+
+.title h1 {
+    font-size: 36px; 
+    color: #333; 
+    margin: 0; 
+    letter-spacing: 2px; 
+    font-weight: bold; 
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top:6%;
+    text-align: center;
+    width:80%;
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#searchForm {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.4s ease;
+    padding: 5px 20px;
+}
+
+#searchForm:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+#keywords {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    transition: width 0.4s ease;
+}
+
+#keywords:focus {
+    width: 300px;
+}
+
+#button {
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+#button:hover {
+    transform: scale(1.2);
+}
+
+.fas {
+    color: lightgreen;
+    font-size: 18px;
+}
+
+.results {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 25%;
+    background-color: rgb(180, 135, 114);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-self: flex-start;
+}
+
+#ardes-column{
+    margin-right: 5%;
+}
+#emag-column{
+    margin-left: 5%;
+}
+#technopolis-column{
+    margin-left: 10%;
+}
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+.product a {
+    color: rgb(123, 214, 123);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.product a:hover {
+    color: rgb(29, 149, 29);
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+#button:hover .fas {
+    animation: pulse 0.6s infinite;
+}
+
+#sortButton {
+font-weight: bold; 
+   position: relative;
+   font-size: 0.7em;
+   letter-spacing: .1em;
+   color: lightgreen;
+   text-decoration: none;
+   text-transform: uppercase;
+   border: 2px solid lightgreen;
+   padding: 1% 0% 1% 0%;
+   transition: color 1s, box-shadow 1s;
+   z-index: 1;
+   overflow: hidden;
+   margin-top: 5%;
+   width: 15%;
+   height: 20%;
+   border-radius: 30px;
+}
+
+#sortButton:hover{
+   transition-delay: 0s, 0.4s;
+   color: #fff;
+   box-shadow:  0 0 4px lightgreen,
+                0 0 8px lightgreen,
+                0 0 16px lightgreen,
+                0 0 32px lightgreen,
+                0 0 40px lightgreen;
+}
+#sortButton::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background: lightgreen;
+    z-index: -1;
+    transition: 1s;
+}
+
+#sortButton:hover::before{
+    width: 100%;
+}
+
+
+.about-button {
+    margin-top:20px;
+    margin-bottom:40px;
+    position: relative;
+    left: 15%;
+    cursor: pointer;
+    background-color: #fff;
+    color:  rgb(119, 189, 119);
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.about-button:hover {
+    background-color: lightgreen;
+    color:white;
+} 
+
+
+.about-text {
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    left:13%;
+    padding:18px 20px;
+    max-width: 50%;
+    background-color: white;
+    display: none; 
+    color: rgb(119, 189, 119);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+    
