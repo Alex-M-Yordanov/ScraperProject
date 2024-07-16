@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Scraper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JavaScipt/data.js"></script> 
+    <script src="../JavaScipt/about.js"></script> 
+</head>
+<body>
+    <div class="title">
+        <h1>Discover Great Phone Deals</h1>
+    </div>
+    <div class="form">
+        <form id="searchForm">
+            <input type="text" id="keywords" name="keywords" placeholder="Search..." required>
+            <button type="submit" id="button"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="results" id="results"></div>
+    </div>
+
+    <button id="sortButton" style="display: none;">Sort by Price</button>
+    
+    <div class="container">
+        <div id="ardes-column" class="column"></div>
+        <div id="emag-column" class="column"></div> 
+        <div id="technopolis-column" class="column"></div>    
+    </div>
+    <footer>
+        <div class="footer-container">
+            <button class="about-button" onclick="toggleAbout()">About</button>
+            <p class="about-text" id="aboutText">
+                     The currency of the prices shown is Bulgarian lev. After multiple
+                uses, if suddenly there are not any results from Emag.bg, you may need
+                to go to the site and show that you are a human and not a bot 
+                because the site is protected by Cloudflare.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
