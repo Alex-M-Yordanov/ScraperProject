@@ -19,7 +19,7 @@
 ### Installation
 1. Download the main folder  "ScraperProject".
 2. Run app.py - it will create a Flask server.
-3. Open frontpage.html.
+3. Open frontpage.html in the browser.
 
    
 ####  Technologies used: Python (Flask, BeautifulSoup4), HTML, CSS, JS
