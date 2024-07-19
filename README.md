@@ -17,7 +17,7 @@
 * At the bottom, there is a button "About", that when pressed shows information about the Cloudfare problem and that the currency used is Bulgarian lev.
 
 ### Installation
-1. Download the main folder.
+1. Download the main folder  "ScraperProject".
 2. Run app.py - it will create a Flask server.
 3. Open frontpage.html.
 
