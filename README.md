@@ -1,5 +1,5 @@
 # ScrapperProject
-Site that provides single page scraping from 3 sites.
+## Site that provides single-page scraping from 3 sites by inputting keywords into a searchbar.
 
 
 Usage:
