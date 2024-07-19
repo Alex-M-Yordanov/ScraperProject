@@ -16,4 +16,10 @@
 * The "Sort by price" button sorts each column by the price of the item in ascending order. Any following presses of the button will just switch the sorting order.
 * At the bottom, there is a button "About", that when pressed shows information about the Cloudfare problem and that the currency used is Bulgarian lev.
 
+### Installation
+1. Download the main folder.
+2. Run app.py - it will create a Flask server.
+3. Open frontpage.html.
+
+   
 ####  Technologies used: Python (Flask, BeautifulSoup4), HTML, CSS, JS
