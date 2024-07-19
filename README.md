@@ -10,7 +10,7 @@
   ####  Note:
    The results shows will only be smartphones as that is the purpose of the site. If nothing shows up on an a column, that mean that, with this search input, the cooresponding site is not showing any smartphone products of its first page.
   #### Note:
-   After multiple searches, if the column for Emag.bg is empty, this may be caused by Cloudfare's defence. You need to go to the site and show that you are not a bot.
+   After multiple searches, if the column for Emag.bg is empty, this may be caused by Cloudfare's defence. You need to go to the site and show that you are not a bot.<br>
 * The "Sort by price" button sorts each column by the price of the item in ascending order. Any following presses of the button will just switch the sorting order.
 * At the bottom, there is a button "About", that when pressed shows information about the Cloudfare problem and that the currency used is Bulgarian lev.
 
