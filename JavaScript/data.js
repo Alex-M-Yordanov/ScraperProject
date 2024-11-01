@@ -1,7 +1,7 @@
 function createProductHTML(product) {
     return `
         <div class="product">
-            <p><strong>Name:</strong> ${product.name}</p>
+            <p><strong>Name:</strong> ${product.title}</p>
             <p><strong>Price:</strong> ${product.price}</p>
             <p><strong>Link:</strong> <a href="${product.link}" target="_blank">View Product</a></p>
         </div>
@@ -52,8 +52,8 @@ function generateProductColumns(results) {
 let sortOrderAscending = true;
 
 function sortFunction(a, b) {
-    const priceA = parseFloat(a.price.replace(/[^0-9.-]+/g, ""));
-    const priceB = parseFloat(b.price.replace(/[^0-9.-]+/g, ""));
+    const priceA = parseFloat(a.price);
+    const priceB = parseFloat(b.price);
     return sortOrderAscending ? priceA - priceB : priceB - priceA;
 }
 
@@ -107,3 +107,4 @@ function main(){
 }
 
 document.addEventListener('DOMContentLoaded', main);
+
