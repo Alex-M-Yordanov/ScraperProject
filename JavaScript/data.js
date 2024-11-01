@@ -52,9 +52,11 @@ function generateProductColumns(results) {
 let sortOrderAscending = true;
 
 function sortFunction(a, b) {
+    
     const priceA = parseFloat(a.price);
     const priceB = parseFloat(b.price);
     return sortOrderAscending ? priceA - priceB : priceB - priceA;
+    
 }
 
 async function sortProductsByPrice(results) {
